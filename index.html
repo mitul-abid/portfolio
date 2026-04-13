@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Md Abid Hassan Mitul</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,8 +11,8 @@
 body {
     font-family: 'Inter', sans-serif;
     background: #f2f5f8;
-    color: #1a1a1a;
     margin: 0;
+    color: #1a1a1a;
 }
 
 .container {
@@ -22,7 +21,8 @@ body {
     margin: auto;
 }
 
-h1 { font-size: 42px; }
+h1 {font-size: 40px;}
+
 h2 {
     margin-top: 60px;
     border-left: 4px solid #4a90e2;
@@ -42,21 +42,17 @@ h2 {
     border-radius: 12px;
 }
 
-/* BUTTON */
 .btn {
     background: #4a90e2;
     color: #fff;
     padding: 10px 18px;
-    text-decoration: none;
     border-radius: 6px;
-    margin-top: 15px;
-    display: inline-block;
+    text-decoration: none;
 }
 
 /* CARD */
 .card {
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(6px);
+    background: #fff;
     padding: 22px;
     border-radius: 12px;
     margin-top: 25px;
@@ -65,70 +61,75 @@ h2 {
 /* TIMELINE */
 .timeline {
     color: #4a90e2;
-    font-weight: 600;
     font-size: 13px;
+    font-weight: 600;
 }
 
 /* KPI */
 .kpi-grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 15px;
+    gap: 12px;
     margin: 20px 0;
 }
 
 .kpi {
     background: #e9f2fb;
-    padding: 20px;
+    padding: 16px;
     border-radius: 10px;
     text-align: center;
 }
 
-.kpi h2 {
-    margin: 0;
-    color: #4a90e2;
-}
-
-.kpi p {
-    font-size: 13px;
-}
-
-/* TAG */
-.tag {
+/* RESPONSIBILITIES */
+.resp-tag {
+    border: 1px solid #ccd6e0;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 12px;
     display: inline-block;
-    background: #e1e8f0;
-    padding: 7px 12px;
-    margin: 6px 6px 0 0;
+}
+
+/* PROJECTS */
+.proj-tag {
+    background: #4a90e2;
+    color: #fff;
+    padding: 6px 12px;
+    margin: 5px;
     border-radius: 20px;
     font-size: 12px;
+    display: inline-block;
 }
 
 /* HIGHLIGHT */
 .highlight {
     margin-top: 15px;
-    padding: 12px;
+    padding: 10px;
     background: #eaf4ff;
     border-left: 4px solid #4a90e2;
-    font-weight: 600;
 }
 
-/* GRID */
+/* SKILLS */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
 
-.footer {
+/* CONTACT */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
     text-align: center;
-    margin: 60px 0 20px;
-    color: #777;
 }
 
+/* MOBILE */
 @media(max-width:900px){
     .hero {flex-direction: column;}
     .kpi-grid {grid-template-columns: 1fr 1fr;}
     .grid {grid-template-columns: 1fr;}
+    .contact-grid {grid-template-columns: 1fr;}
 }
 </style>
 </head>
@@ -142,16 +143,17 @@ h2 {
 <div>
 <h1>Md Abid Hassan Mitul</h1>
 <p><strong>IT Automation & Digital Transformation Lead</strong></p>
-<p>MES • SCADA • ERP • CRM • PLM • SaaS • PaaS • Iaas  </p>
 
-<a href="Mitul_Abid_CV.pdf" download class="btn">⬇ Download CV</a>
+<p>MES · OT · SCADA · ERP · CRM · PLM · SaaS · PaaS · IaaS</p>
+
+<a href="Mitul_Abid_CV.pdf" class="btn">Download CV</a>
 </div>
 
 <img src="photo.jpg">
 </div>
 
 <!-- EXPERIENCE -->
-<h2>💼 Professional Experience</h2>
+<h2>Experience</h2>
 
 <!-- FLOREAL -->
 <div class="card">
@@ -159,31 +161,38 @@ h2 {
 <h3>Automation Engineer – Floreal Bangladesh</h3>
 
 <div class="kpi-grid">
-<div class="kpi"><h2>15+</h2><p>Enterprise automation systems delivered</p></div>
-<div class="kpi"><h2>70–80% ↓</h2><p>Manual process effort reduced</p></div>
-<div class="kpi"><h2>5000+ / month</h2><p>Workflow transactions automated</p></div>
-<div class="kpi"><h2>300+</h2><p>Users supported with RBAC systems</p></div>
+<div class="kpi">15+<br>Systems Delivered</div>
+<div class="kpi">70–80%<br>Efficiency Improved</div>
+<div class="kpi">30000+/Month<br>Workflow Transactions</div>
+<div class="kpi">800+<br>Users</div>
 </div>
 
-<ul>
-<li>Designed and deployed enterprise automation systems</li>
-<li>Owned full lifecycle (BRD → SRS → UAT → Deployment)</li>
-<li>Implemented RBAC and cross-system integrations</li>
-</ul>
+<div>
+<span class="resp-tag">Automation Design</span>
+<span class="resp-tag">SDLC</span>
+<span class="resp-tag">Process Automation</span>
+<span class="resp-tag">RBAC</span>
+<span class="resp-tag">System Integration</span>
+<span class="resp-tag">Workflow Design</span>
+<span class="resp-tag">Data Structuring</span>
+<span class="resp-tag">Performance Tuning</span>
+<span class="resp-tag">Requirement Analysis</span>
+<span class="resp-tag">User Training</span>
+</div>
 
 <div>
-<span class="tag">Gate Pass</span>
-<span class="tag">GRN</span>
-<span class="tag">Store & Purchase Requisition</span>
-<span class="tag">IT Helpdesk</span>
-<span class="tag">Maintenance Service</span>
-<span class="tag">License Reminder</span>
-<span class="tag">Vehicle Management</span>
-<span class="tag">Inventory & Asset Management</span>
-<span class="tag">Employee Onboarding</span>
-<span class="tag">Automated Label Printing</span>
-<span class="tag">6S Evaluation</span>
-<span class="tag">Central Application Management Hub</span>
+<span class="proj-tag">Gate Pass</span>
+<span class="proj-tag">GRN</span>
+<span class="proj-tag">Store & Purchase Requisition</span>
+<span class="proj-tag">IT Helpdesk</span>
+<span class="proj-tag">Maintenance Service</span>
+<span class="proj-tag">License Reminder</span>
+<span class="proj-tag">Vehicle Management</span>
+<span class="proj-tag">Inventory & Asset Management</span>
+<span class="proj-tag">Employee Onboarding</span>
+<span class="proj-tag">Automated Label Printing</span>
+<span class="proj-tag">6S Evaluation</span>
+<span class="proj-tag">Central Application Management Hub</span>
 </div>
 
 <div class="highlight">🏆 Champion – Ciel Textile Global Kaizen Competition 2026</div>
@@ -195,26 +204,30 @@ h2 {
 <h3>System Administrator – Gildan</h3>
 
 <div class="kpi-grid">
-<div class="kpi"><h2>500+</h2><p>MES machines managed</p></div>
-<div class="kpi"><h2>400+</h2><p>SCADA nodes monitored</p></div>
-<div class="kpi"><h2>80–90% ↓</h2><p>Production downtime reduced</p></div>
-<div class="kpi"><h2>99%+</h2><p>System uptime maintained</p></div>
+<div class="kpi">500+<br>Machines</div>
+<div class="kpi">400+<br>Nodes</div>
+<div class="kpi">80–90%<br>Downtime Reduced</div>
+<div class="kpi">99%+<br>Uptime</div>
 </div>
 
-<ul>
-<li>Managed MES-SCADA systems in 24/7 production</li>
-<li>Performed root cause analysis (RCA) and monitoring</li>
-<li>Coordinated with global teams and vendors</li>
-</ul>
+<div>
+<span class="resp-tag">MES-SCADA Operations</span>
+<span class="resp-tag">Root Cause Analysis</span>
+<span class="resp-tag">Server Administration</span>
+<span class="resp-tag">Uptime Management</span>
+<span class="resp-tag">Vendor Management</span>
+<span class="resp-tag">System Deployment</span>
+<span class="resp-tag">Global Coordination</span>
+</div>
 
 <div>
-<span class="tag">Orgatex (Dyeing & Compacting)</span>
-<span class="tag">Color Service & Bitacora (Chemical & Color Dispense)</span>
-<span class="tag">Vanguard (Knitting)</span>
-<span class="tag">Panta Rei (ETP)</span>
-<span class="tag">BRB (Cutting)</span>
-<span class="tag">Bianco (Squeezing)</span>
-<span class="tag">Schneider & Siemens Solutions (SCADA, Microgrid, Water, Generator, Gas, Diesel, Solar)</span>
+<span class="proj-tag">Orgatex (Dyeing & Compacting)</span>
+<span class="proj-tag">Color Service & Bitacora (Chemical & Color Dispense)</span>
+<span class="proj-tag">Vanguard (Knitting)</span>
+<span class="proj-tag">Panta Rei (ETP)</span>
+<span class="proj-tag">BRB (Cutting)</span>
+<span class="proj-tag">Bianco (Squeezing)</span>
+<span class="proj-tag">Schneider & Siemens Solutions (SCADA, Microgrid, Water, Generator, Gas, Diesel, Solar)</span>
 </div>
 
 <div class="highlight">🏆 Operational Excellence – GPAT Award 2024</div>
@@ -226,78 +239,101 @@ h2 {
 <h3>Product Development Engineer – Desh Universal</h3>
 
 <div class="kpi-grid">
-<div class="kpi"><h2>15+</h2><p>ERP/CRM modules developed</p></div>
-<div class="kpi"><h2>300+</h2><p>Institutes supported</p></div>
-<div class="kpi"><h2>60% ↓</h2><p>System bugs reduced through QA</p></div>
-<div class="kpi"><h2>40–50% ↑</h2><p>Delivery speed improved via Agile</p></div>
+<div class="kpi">15+<br>Modules</div>
+<div class="kpi">300+<br>Institutes</div>
+<div class="kpi">60%<br>Bugs Reduced</div>
+<div class="kpi">40–50%<br>Speed Improved</div>
 </div>
 
-<ul>
-<li>Led MVC migration and system architecture redesign</li>
-<li>Defined BRD, SRS, and business workflows</li>
-<li>Worked in Agile environment with cross-functional teams</li>
-</ul>
+<div>
+<span class="resp-tag">MVC Migration</span>
+<span class="resp-tag">ERP/CRM Development</span>
+<span class="resp-tag">Requirement Analysis</span>
+<span class="resp-tag">BRD & SRS</span>
+<span class="resp-tag">UX/UI Design</span>
+<span class="resp-tag">Agile Development</span>
+<span class="resp-tag">Quality Assurance</span>
+<span class="resp-tag">Database Design</span>
+<span class="resp-tag">System Integration</span>
+<span class="resp-tag">Client Management</span>
+</div>
 
 <div>
-<span class="tag">Student Information & Collection (SICS)</span>
-<span class="tag">Human Resource (HRM)</span>
-<span class="tag">Payroll (PMS)</span>
-<span class="tag">Accounts (FAMS)</span>
-<span class="tag">Result (RMS & Result Analytics)</span>
-<span class="tag">Attendance (ANS)</span>
-<span class="tag">Notification (SMS & Email)</span>
-<span class="tag">Inventory (IMS)</span>
-<span class="tag">Library (LMS)</span>
-<span class="tag">Hostel (HMS)</span>
-<span class="tag">Security (SICS)</span>
-<span class="tag">Admission (Vorti-BD)</span>
-<span class="tag">Portals (Incident, Teacher Student Parents - TSP)</span>
+<span class="proj-tag">Student Information & Collection (SICS)</span>
+<span class="proj-tag">Human Resource (HRM)</span>
+<span class="proj-tag">Payroll (PMS)</span>
+<span class="proj-tag">Accounts (FAMS)</span>
+<span class="proj-tag">Result (RMS & Result Analytics)</span>
+<span class="proj-tag">Attendance (ANS)</span>
+<span class="proj-tag">Notification (SMS & Email)</span>
+<span class="proj-tag">Inventory (IMS)</span>
+<span class="proj-tag">Library (LMS)</span>
+<span class="proj-tag">Hostel (HMS)</span>
+<span class="proj-tag">Security (SICS)</span>
+<span class="proj-tag">Admission (Vorti-BD)</span>
+<span class="proj-tag">Portals (Incident, Teacher Student Parents - TSP)</span>
 </div>
 
 <div class="highlight">🏆 Deep Problem Solver Award & Team Achievement Award (2023)</div>
 </div>
 
 <!-- SKILLS -->
-<h2>🧠 Technical Skills</h2>
+<h2>Skills</h2>
 
 <div class="grid">
-<div class="card"><strong>Programming</strong><br>Python, JavaScript, HTML, CSS, MATLAB</div>
-<div class="card"><strong>Database</strong><br>MS SQL Server, MySQL, Dataverse</div>
-<div class="card"><strong>Infrastructure</strong><br>Windows Server, Linux, AD, DNS, DHCP, Cisco Catalyst, Azure</div>
-<div class="card"><strong>Design & Engineering</strong><br>Figma, Microsoft Visio, AutoCAD, Siemens TIA Portal</div>
-<div class="card"><strong>Analytics</strong><br>Power BI, Tableau, Excel, ML, DL, NLP</div>
-<div class="card"><strong>Platforms</strong><br>Power Apps, Power Automate, SharePoint, Microsoft 365, Google Workspace, Oracle ERP</div>
-<div class="card"><strong>QA & Testing</strong><br>Postman, Selenium, Unit, UAT, A/B</div>
-<div class="card"><strong>Project & Collaboration</strong><br>Git, Jira, ServiceNow, Notion</div>
+<div class="card"><b>Programming</b><br>Python, JavaScript, HTML, CSS, MATLAB</div>
+<div class="card"><b>Database</b><br>MS SQL Server, MySQL</div>
+<div class="card"><b>Infrastructure</b><br>Windows Server, Linux, AD, DNS, DHCP</div>
+<div class="card"><b>Design</b><br>Figma, AutoCAD, Visio</div>
+<div class="card"><b>Analytics</b><br>Power BI, Tableau</div>
+<div class="card"><b>Platform</b><br>Power Apps, Power Automate, SharePoint</div>
+<div class="card"><b>QA</b><br>Postman, Selenium</div>
+<div class="card"><b>Project Management</b><br>Git, Jira, ServiceNow</div>
+<div class="card"><b>English Level</b><br>CEFR Level – C1 (Professional Working Proficiency)</div>
 </div>
 
 <!-- EDUCATION -->
-<h2>🎓 Education & Research</h2>
+<h2>Education & Research</h2>
 
 <div class="card">
-<strong>MSc in Mathematics – DUET (2026)</strong><br>
+<b>MSc in Mathematics – DUET (2026)</b><br>
 🔬 Mathematical Modeling & ML Driven Optimization for Complex Systems Resource Allocation
 </div>
 
 <div class="card">
-<strong>BSc in Electronics & Telecommunication Engineering – RUET (2022)</strong><br>
+<b>BSc in Electronics & Telecommunication Engineering – RUET (2022)</b><br>
 🔬 Optimization of D2D Communication in 5G Network Along with Millimeterwave and Massive MIMO
+<br><br>
+📄 Publications:
+<ul>
+<li>A Distributed Method Analysis for Enabling Device-to-Device Communications in Millimeter Wave Bands (IC4ME2 2019)</li>
+<li>Investigation of Energy Efficiency in Underlaid D2D Assisted 5G Cellular Network (ICECTE 2019)</li>
+<li>Evaluation of Feedback Method for FDD Massive MIMO in Device-to-device Communications (ICECTE 2019)</li>
+</ul>
 </div>
 
 <div class="card">
-<strong>HSC – Rajuk Uttara Model College (2014)</strong><br>
-<strong>SSC – Gazipur Cantonment Board High School (2012)</strong>
+<b>HSC – Rajuk Uttara Model College (2014)</b><br>
+🏅 Awarded Govt Scholarship
+</div>
+
+<div class="card">
+<b>SSC – Gazipur Cantonment Board High School (2012)</b><br>
+🏅 Awarded Govt Scholarship
 </div>
 
 <!-- CONTACT -->
-<h2>📞 Contact</h2>
-<div class="card">
-Email: mitul.mdabidhassan@gmail.com<br>
-Phone: +880 1915 637 477<br>
-LinkedIn: linkedin.com/in/mitul-abid
+<h2>Contact</h2>
+
+<div class="contact-grid">
+<div class="card">📧 Email<br>mitul.mdabidhassan@gmail.com</div>
+<div class="card">📞 Phone<br>+8801915637477</div>
+<div class="card">🔗 LinkedIn<br><a href="https://linkedin.com/in/mitul-abid" target="_blank">linkedin.com/in/mitul-abid</a></div>
+<div class="card">📱 Scan<br><img src="qr.png" width="120"></div>
 </div>
 
-<div class="footer">
+<!-- FOOTER -->
+<div style="text-align:center; margin:50px 0 20px; color:#777;">
 © 2026 Portfolio | Md Abid Hassan Mitul
 </div>
 
